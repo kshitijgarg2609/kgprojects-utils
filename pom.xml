@@ -1,0 +1,63 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.kgprojects</groupId>
+  <artifactId>kgprojects-utils</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>kgprojects-utils</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven-compiler-plugin-version>3.13.0</maven-compiler-plugin-version>
+    <maven-compiler-plugin-source>21</maven-compiler-plugin-source>
+    <maven-compiler-plugin-target>21</maven-compiler-plugin-target>
+    <lombok-version>1.18.34</lombok-version>
+    <fasterxml-jackson-databind-version>2.18.0</fasterxml-jackson-databind-version>
+  </properties>
+
+  <dependencies>
+  <dependency>
+  	<groupId>commons-io</groupId>
+  	<artifactId>commons-io</artifactId>
+  	<version>2.17.0</version>
+  </dependency>
+  <dependency>
+  	<groupId>com.itextpdf</groupId>
+  	<artifactId>itext-core</artifactId>
+  	<version>8.0.5</version>
+  	<type>pom</type>
+  </dependency>
+  <dependency>
+  	<groupId>org.apache.commons</groupId>
+  	<artifactId>commons-lang3</artifactId>
+  	<version>3.17.0</version>
+  </dependency>
+  <dependency>
+  	<groupId>com.google.zxing</groupId>
+  	<artifactId>core</artifactId>
+  	<version>3.5.3</version>
+  </dependency>
+  <dependency>
+  	<groupId>com.google.zxing</groupId>
+  	<artifactId>javase</artifactId>
+  	<version>3.5.3</version>
+  </dependency>
+  </dependencies>
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.maven.plugins</groupId>
+  			<artifactId>maven-compiler-plugin</artifactId>
+  			<version>${maven-compiler-plugin-version}</version>
+  			<configuration>
+  				<source>${maven-compiler-plugin-source}</source>
+  				<target>${maven-compiler-plugin-target}</target>
+  			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>
