@@ -1,5 +1,7 @@
 package com.kgprojects.util;
-
+/**
+ * @author Kshitij Garg
+ */
 import java.io.UnsupportedEncodingException;
 import java.net.URI;
 import java.net.URLEncoder;

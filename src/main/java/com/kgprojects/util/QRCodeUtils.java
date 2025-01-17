@@ -8,7 +8,9 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import com.google.zxing.Writer;
 import com.google.zxing.oned.Code128Writer;
-
+/**
+ * @author Kshitij Garg
+ */
 public class QRCodeUtils
 {
 	public static BufferedImage generateQR(String txt, int w, int h)

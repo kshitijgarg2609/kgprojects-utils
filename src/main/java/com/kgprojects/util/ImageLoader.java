@@ -1,6 +1,9 @@
 package com.kgprojects.util;
 
 import java.awt.Color;
+/**
+ * @author Kshitij Garg
+ */
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.RenderingHints;

@@ -18,7 +18,9 @@ import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import javax.swing.text.AbstractDocument;
 import javax.swing.text.DocumentFilter;
-
+/**
+ * @author Kshitij Garg
+ */
 public class ImageDisplayer extends JFrame
 {
 	/**

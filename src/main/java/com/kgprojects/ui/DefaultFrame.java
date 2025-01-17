@@ -1,7 +1,9 @@
 package com.kgprojects.ui;
 
 import javax.swing.JFrame;
-
+/**
+ * @author Kshitij Garg
+ */
 public class DefaultFrame extends JFrame
 {
 	/**

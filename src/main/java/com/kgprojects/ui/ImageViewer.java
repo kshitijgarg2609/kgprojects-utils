@@ -11,7 +11,9 @@ import java.awt.Rectangle;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-
+/**
+ * @author Kshitij Garg
+ */
 public class ImageViewer extends DefaultFrame
 {
 	/**

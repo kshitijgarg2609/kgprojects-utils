@@ -4,7 +4,9 @@ import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.util.HashSet;
 import java.util.Set;
-
+/**
+ * @author Kshitij Garg
+ */
 public class ColorUtils
 {
 	public static BufferedImage renewColors(BufferedImage img)

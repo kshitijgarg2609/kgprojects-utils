@@ -9,7 +9,9 @@ import java.util.Set;
 import javax.imageio.ImageIO;
 
 import org.apache.commons.io.FilenameUtils;
-
+/**
+ * @author Kshitij Garg
+ */
 public class ImageLoader2
 {
 	public static final Set<String> imgExtensions = new HashSet<>(

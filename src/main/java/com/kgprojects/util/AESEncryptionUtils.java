@@ -4,7 +4,9 @@ import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
-
+/**
+ * @author Kshitij Garg
+ */
 public class AESEncryptionUtils
 {
     public static SecretKey generateSecretKey() throws Exception

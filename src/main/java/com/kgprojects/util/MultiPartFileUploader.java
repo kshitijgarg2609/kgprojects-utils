@@ -7,7 +7,9 @@ import java.net.URI;
 import java.util.UUID;
 
 import org.apache.commons.io.FileUtils;
-
+/**
+ * @author Kshitij Garg
+ */
 public class MultiPartFileUploader
 {
 	public static void upload(HttpURLConnection http, File file)throws Exception

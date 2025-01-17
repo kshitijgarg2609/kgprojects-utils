@@ -1,7 +1,9 @@
 package com.kgprojects.util;
 
 import org.apache.commons.lang3.SystemUtils;
-
+/**
+ * @author Kshitij Garg
+ */
 public class SharedFolderName
 {
 	public static String getSharedFolderName()

@@ -10,7 +10,9 @@ import javax.swing.SwingConstants;
 import javax.swing.border.LineBorder;
 import java.awt.Color;
 import java.awt.GridLayout;
-
+/**
+ * @author Kshitij Garg
+ */
 public class DialogBoxUtils
 {
 	public static JDialog getMessageDialog(JFrame jf, String msg)

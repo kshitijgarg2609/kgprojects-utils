@@ -1,5 +1,7 @@
 package com.kgprojects.util;
-
+/**
+ * @author Kshitij Garg
+ */
 public class TimeUp
 {
 	private long snap_time,timeout;

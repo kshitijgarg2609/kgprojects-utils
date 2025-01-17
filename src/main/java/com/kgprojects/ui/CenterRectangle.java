@@ -3,7 +3,9 @@ package com.kgprojects.ui;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
-
+/**
+ * @author Kshitij Garg
+ */
 public class CenterRectangle
 {
 	public static Rectangle getInnerRectangle(int w,int h,int b)
