@@ -14,6 +14,15 @@ public class DefaultFrame extends JFrame
 	{
 		this(a,850,650);
 	}
+	public DefaultFrame()
+	{
+		super();
+//		setBounds(CenterRectangle.getScreenRectangle(w,h));
+		setResizable(true);
+		setLayout(null);
+		setExtendedState(MAXIMIZED_BOTH);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+	}
 	public DefaultFrame(String a,int w,int h)
 	{
 		super(a);
