@@ -11,6 +11,17 @@ import java.util.stream.Collectors;
 
 public class URIUtils
 {
+	public static String replacer(String uri) throws Exception
+	{
+		return URLEncoder.encode(uri, StandardCharsets.UTF_8.toString())
+				.replace("+", "%20")
+		        .replace("%21", "!")
+		        .replace("%27", "'")
+		        .replace("%28", "(")
+		        .replace("%29", ")")
+		        .replace("%7E", "~")
+		        .replace("%40", "@");
+	}
 	public static URI getLink(String parent,String child)throws Exception
 	{
 		if(parent.charAt(parent.length()-1)=='/')
