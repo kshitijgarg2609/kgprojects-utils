@@ -223,4 +223,12 @@ public class ImageLoader
 		}
 		catch(Exception e) {e.printStackTrace();}
 	}
+	public static void setLabelImage(BufferedImage img, JLabel label)
+	{
+		try
+		{
+			label.setIcon(new ImageIcon(scaledImage(img, label.getWidth(), label.getHeight())));
+		}
+		catch(Exception e) {e.printStackTrace();}
+	}
 }

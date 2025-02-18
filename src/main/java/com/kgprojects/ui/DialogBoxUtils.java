@@ -15,7 +15,7 @@ public class DialogBoxUtils
 {
 	public static JDialog getMessageDialog(JFrame jf, String msg)
 	{
-		JDialog jd = new JDialog(jf, msg, true);
+		JDialog jd = new JDialog(jf, "", true);
 		jd.setBounds(CenterRectangle.getScreenRectangle(400, 200));
 		jd.getContentPane().setLayout(new GridLayout(1, 1, 10, 10));
 		JLabel lbl = new JLabel(msg,SwingConstants.CENTER);
