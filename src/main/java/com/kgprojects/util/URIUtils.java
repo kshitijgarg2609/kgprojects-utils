@@ -39,6 +39,10 @@ public class URIUtils
 		        .replace("%40", "@")
 		        );
 	}
+	public static URI getLink(String parent,Map<String, String> query)throws Exception
+	{
+		return URI.create(parent+"?"+requestToString(query));
+	}
 	public static URI getLink(String parent,String child,Map<String, String> query)throws Exception
 	{
 		return URI.create(getLink(parent,child).toString()+"?"+requestToString(query));
