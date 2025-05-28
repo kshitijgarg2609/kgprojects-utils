@@ -3,7 +3,6 @@ package com.kgprojects.util;
 import java.io.File;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
-import java.net.URI;
 import java.util.UUID;
 
 import org.apache.commons.io.FileUtils;

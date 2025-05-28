@@ -45,4 +45,9 @@ public class ImageViewer extends DefaultFrame
 		imgLabel.setIcon(new ImageIcon(ImageLoader
 				.scaledImage(img, imgLabel.getWidth(), imgLabel.getHeight())));
 	}
+	public void updateImageWithPadding(BufferedImage img)
+	{
+		imgLabel.setIcon(new ImageIcon(ImageLoader
+				.scaledImageWithPadding(img, imgLabel.getWidth(), imgLabel.getHeight())));
+	}
 }
