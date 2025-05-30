@@ -40,6 +40,10 @@ public class ImageViewer extends DefaultFrame
 		updateImage(ImageIO.read(is));
 		is.close();
 	}
+	public void removeImage()
+	{
+		imgLabel.setIcon(null);
+	}
 	public void updateImage(BufferedImage img)
 	{
 		imgLabel.setIcon(new ImageIcon(ImageLoader
