@@ -1,6 +1,7 @@
 package com.kgprojects.util;
 
 import java.io.File;
+import java.io.IOException;
 
 import org.apache.commons.io.FileUtils;
 /**
@@ -41,7 +42,13 @@ public class DirUtils
 	{
 		for(File ff : files)
 		{
-			FileUtils.deleteQuietly(ff);
+			try
+			{
+				FileUtils.delete(ff);
+			}
+			catch (IOException e)
+			{
+			}
 		}
 	}
 }
