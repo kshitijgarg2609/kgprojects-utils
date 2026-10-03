@@ -231,4 +231,24 @@ public class ImageLoader
 		}
 		catch(Exception e) {e.printStackTrace();}
 	}
+	public BufferedImage rotate90Clockwise(BufferedImage img)
+	{
+		BufferedImage bi = null;
+		try
+		{
+			bi = new BufferedImage(img.getHeight(), img.getWidth(), img.getType());
+			for(int h=0;h<img.getHeight();h++)
+			{
+				for(int w=0;w<img.getWidth();w++)
+				{
+					bi.setRGB(w, h, img.getRGB(h, w));
+				}
+			}
+		}
+		catch(Exception ex)
+		{
+			
+		}
+		return bi;
+	}
 }
