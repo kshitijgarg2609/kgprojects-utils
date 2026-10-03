@@ -1,5 +1,7 @@
 package com.kgprojects.util;
 
+import java.awt.Color;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.Arrays;
@@ -7,6 +9,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import javax.imageio.ImageIO;
+import javax.swing.JComponent;
 
 import org.apache.commons.io.FilenameUtils;
 /**
@@ -30,6 +33,31 @@ public class ImageLoader2
 			{
 				bi=ImageIO.read(img);
 			}
+		}
+		catch(Exception ex)
+		{
+			
+		}
+		return bi;
+	}
+	public BufferedImage captureImageFromSwing(JComponent comp)
+	{
+		BufferedImage bi = null;
+		try
+		{
+			bi = new BufferedImage(comp.getWidth(), comp.getHeight(), BufferedImage.TYPE_INT_RGB);
+	        Graphics2D g2d = bi.createGraphics();
+	        if (comp.isOpaque())
+	        {
+	            g2d.setColor(comp.getBackground());
+	        }
+	        else
+	        {
+	            g2d.setColor(Color.WHITE);
+	        }
+	        g2d.fillRect(0, 0, comp.getWidth(), comp.getHeight());
+	        comp.printAll(g2d);
+	        g2d.dispose();
 		}
 		catch(Exception ex)
 		{
