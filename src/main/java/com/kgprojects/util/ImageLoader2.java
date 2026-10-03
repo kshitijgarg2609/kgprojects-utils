@@ -40,7 +40,7 @@ public class ImageLoader2
 		}
 		return bi;
 	}
-	public BufferedImage captureImageFromSwing(JComponent comp)
+	public static BufferedImage captureImageFromSwing(JComponent comp)
 	{
 		BufferedImage bi = null;
 		try
