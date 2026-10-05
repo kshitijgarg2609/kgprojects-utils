@@ -110,6 +110,23 @@ public class ImageLoader
 		g2.dispose();
 		return b;
 	}
+	public static BufferedImage scaledImageWithQuality(Image img,int w,int h)
+	{
+		return scaledImageWithQuality(img, w, h, BufferedImage.TYPE_INT_RGB);
+	}
+	public static BufferedImage scaledImageWithQuality(Image img,int w,int h,int imageType)
+	{
+		BufferedImage b;
+		Graphics2D g2;
+		b=new BufferedImage(w,h,imageType);
+		g2=b.createGraphics();
+		g2.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+        g2.setRenderingHint(RenderingHints.KEY_RENDERING, RenderingHints.VALUE_RENDER_QUALITY);
+        g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g2.drawImage(img,0,0,w,h,null);
+		g2.dispose();
+		return b;
+	}
 	public static BufferedImage scaledImageWithPadding(Image img,int w,int h)
 	{
 		return scaledImageWithPadding(img, w, h, Color.BLACK);
