@@ -248,7 +248,7 @@ public class ImageLoader
 		}
 		catch(Exception e) {e.printStackTrace();}
 	}
-	public BufferedImage rotate90Clockwise(BufferedImage img)
+	public static BufferedImage rotate90Clockwise(BufferedImage img)
 	{
 		BufferedImage bi = null;
 		try
